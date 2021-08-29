@@ -74,6 +74,28 @@ if (mehedi < 100 && mehedi > 80) {
     }
 }
 
+console.log("************* Grade System with else if *************");
+
+var mahdi = 55;
+
+if (mahdi > 80 && mahdi < 100) {
+  console.log("Mahdi got A+ Grade");
+} else if (mahdi > 70 && mahdi < 80) {
+  console.log("Mahdi got A Grade");
+} else if (mahdi > 60 && mahdi < 70) {
+  console.log("Mahdi got A- Grade");
+} else if (mahdi > 50 && mahdi < 60) {
+  console.log("Mahdi got B Grade");
+} else if (mahdi > 40 && mahdi < 50) {
+  console.log("Mahdi got C Grade");
+} else if (mahdi > 33 && mahdi < 40) {
+  console.log("Mahdi got D Grade");
+} else if (mahdi > 100) {
+  console.log("Mahdi got Abnormal Result");
+} else {
+   console.log("Mahdi is failed");
+}
+
 console.log("************* For Loop Work 1 *************");
 
 var sum = 0;
@@ -120,6 +142,17 @@ for (var index = 0; index < strName.length; index++) {
     if (strName[index] === "Mehedi") {
         console.log(`${strName[index]}` + "*");
         break;
+    }
+   
+}
+
+console.log("************* Specific star among all *************");
+
+for (var index = 0; index < strName.length; index++) {
+    if (strName[index] === "Mehedi") {
+        console.log(`${strName[index]}` + "*");
+    } else {
+        console.log(strName[index]);
     }
    
 }
